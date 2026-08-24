@@ -1,0 +1,68 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "abb6ad43-7a9a-4138-9db8-c024801e1edb")
+	(paper "A")
+	(title_block
+		(title "Educational Memory Teaching Tool")
+		(date "2026-08-16")
+		(rev "0.1")
+		(company "Virginia Polytechnic Institute and State University")
+		(comment 1 "Daniel J. Lomis")
+		(comment 2 "AMP Lab @ VT")
+	)
+	(lib_symbols)
+	(sheet
+		(at 144.78 21.59)
+		(size 22.86 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b88f76e1-fd61-4147-b341-5dd8096a15b6")
+		(property "Sheetname" "Vertical Generation"
+			(at 144.78 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Vertical_Gen.kicad_sch"
+			(at 144.78 41.2246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Memory-Teaching-Tool"
+				(path "/abb6ad43-7a9a-4138-9db8-c024801e1edb"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
