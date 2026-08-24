@@ -3,14 +3,14 @@ Daniel J. Lomis, Computer Engineering: Chip-Scale Integration (May 2026)
 dlomis1999@vt.edu
 
 ## Mentor
-MENTOR NAME HERE
+Professor Jason S. Thweatt
 
 ## Current Status
 IN PROGRESS
 
 ## Project Overview
 
-This project will demonstrate to the end-user how SRAM is used to store data within a computer, how changing BITs will have an effect on the output of the visualized character. (The development of a PAL will be likely be needed to output ASCII-based character map, possible future implementation), but for now will used 
+This project will demonstrate to the end-user how memory is used to store and read data within a computer, how changing BITs will have an effect on the output of a visualized character. while the unit itself will not be using a centralized processing unit instead the heart of the binary to ask you decoding will be controlled by a character generator ROM made by Fairchild semiconductor. The particular part is a 3257ADC from the late 1970s. The use of vintage components in this particular build helps to take away the layers of abstraction that computers now represent in modern day technology. By simplifying the underlying hardware that has the result of making the overall explanation of its functionality simpler. All plans were originally meant to include a set of early 1980s SRAM moudules. The need to switch to multiple education boards for the final product, made it clear that additional memory was needed as well as a more ample and stable supply of it.
 
 ## Educational Value Added
 
@@ -18,12 +18,17 @@ It provides insight to how character generator ROMs work, which were quite commo
 
 ## Tasks
 
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+Remaining tasks
+ • research and implementation of a proper display method for the 8 x 8 matrix
+ • research in limitation of the chosen memory modules
+ • research and implementation of a binary input method for the memory
+ • optional: an implementation to set and reset the memory counter to change specific memory areas that aren't linearly accessed
 
 ## Design Decisions
 
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
-
+ • the board will be placed on a single PCB smaller than a sheet of standard letter paper
+ • the device will be using a 16 VDC power supply going into the power connector on the board. The type of power supply and whether it will be USB-C based has yet to be determined.
+ • 
 ## Design Misc
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
