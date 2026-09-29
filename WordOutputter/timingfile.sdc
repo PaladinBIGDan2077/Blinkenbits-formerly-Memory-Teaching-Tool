@@ -21,7 +21,7 @@
 ## VERSION "Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition"
 
 ##
-## DEVICE  "5CSEMA5F31C6"
+## DEVICE  "A5ED013BB32AE4S"
 ##
 
 
@@ -36,8 +36,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name CLOCK50 -period 25 [get_ports CLOCK50]
-create_clock -name LETTER_ADV -period 2000000 [get_ports LETTER_ADV]
+create_clock -name clock_50 -period 25 [get_ports clock_50]
 
 
 #**************************************************************

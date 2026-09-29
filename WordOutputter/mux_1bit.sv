@@ -1,37 +1,36 @@
 module multiplexer_1bit(
-    input        clock_50,
     input        clock_in,
     input        advance_in,
     input        switch,
-    input        reset_active_low,
-    output logic sys_clock
+    output logic enable
     );
-    
-    logic   clock_toggle;
-    
-    always_ff @(negedge clock_50, negedge reset_active_low) begin
-        if (!reset_active_low) begin
-            clock_toggle <= 1'b0;
+        
+    always_comb begin
+        if (switch) begin
+            enable = clock_in;
         end
         else begin
-            if (switch) begin
-                clock_toggle <= 1'b1;
-            end
-            else begin
-                clock_toggle <= 1'b0;
-            end
+            enable = advance_in;
         end
     end
     
+endmodule
+
+
+
+module multiplexer_6bit_2_to_1(
+    input        [5:0] input_a,
+    input        [5:0] input_b,
+    input        		select,
+    output logic [5:0] output_bus
+    );
+        
     always_comb begin
-        if (clock_toggle) begin
-            sys_clock = clock_in;
-        end
-        else if (!clock_toggle) begin
-            sys_clock = advance_in;
+        if (select) begin
+            output_bus = input_a;
         end
         else begin
-            sys_clock = 1'b0;
+            output_bus = input_b;
         end
     end
     
