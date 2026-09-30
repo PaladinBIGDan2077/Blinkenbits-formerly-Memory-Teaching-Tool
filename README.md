@@ -1,5 +1,5 @@
 ## Members
-Daniel J. Lomis, Computer Engineering: Chip-Scale Integration (May 2026)
+Daniel J. Lomis, Computer Engineering: Chip-Scale Integration (May 2027)
 dlomis1999@vt.edu
 
 ## Mentor
