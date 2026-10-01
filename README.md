@@ -59,25 +59,25 @@ Additions completed as I go, every 8 weeks a new presentation will be uploaded d
 
 # BOM + Component Cost
 
-VINTAGE Fairchild 3257ADC Character Generator ROM - $16.37
-8X8 LED MATRIX - $10.86
-OnSemi (Motorola) 4 x 1024 Bit SRAM Memory, two in parallel making 1K of memory - $7.99 (per chip)
-Various 74-series logic chips, more will be added as design decisions are finalized - $9.99 (per chip)
-PCB Generation: Prototype (8-Bit D-Type Flip Flop Display Board, practice) - $11.15
-PCB Generation: Visual-portion Prototype - $9.99
-PCB Generation: Final Product
+ - VINTAGE Fairchild 3257ADC Character Generator ROM - $16.37
+ - 8X8 LED MATRIX - $10.86
+ - OnSemi (Motorola) 4 x 1024 Bit SRAM Memory, two in parallel making 1K of memory - $7.99 (per chip)
+ - Various 74-series logic chips, more will be added as design decisions are finalized - $9.99 (per chip)
+ - PCB Generation: Prototype (8-Bit D-Type Flip Flop Display Board, practice) - $11.15
+ - PCB Generation: Visual-portion Prototype - $9.99
+ - PCB Generation: Final Product
 
 # Timeline
 
 To-be Added
 
-## Useful Links
+# Useful Links
 
  - https://en.wikipedia.org/wiki/ASCII
  - https://en.wikipedia.org/wiki/7400-series_integrated_circuits
  - https://en.wikipedia.org/wiki/Character_generator
  - https://en.wikipedia.org/wiki/Transistor
 
-## Log
+# Log
 
 To-be Added (see PowerPoints Folder)
