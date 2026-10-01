@@ -1,5 +1,6 @@
 ## Project Name
 WIP Title: BlinkenBits
+
 Internal Codename: Memory Teaching Tool
 
 ## Members
@@ -34,28 +35,38 @@ It provides insight to how a character generator ROMs works, which were quite co
  - Preliminary physical development of the data portion of the data input circuit
  - Implement Memory Testing using SystemVerilog to check the operation of the MM2114
  - Develop a physical PCB prototype of the 8x8 Matrix portion of the circuit (as current implementation has a tendency to fail due to the literal rats nest of jumpers and wires being used. This will improve testing accuracy when moving on to the data input side)
- - Develop a PCB Footprint and Symbol for the 8x8 Matrix
+ - Develop a PCB Footprint and Symbol for the 8x8 Matrix in KiCad
+ - Determine the best circuit to implement the clock generation for the vertical and horizontal line drawing (must be two separate circuits), maybe PLL-based for Vertical generation or both maybe 555-based for the Horizontal generation (needs to be adjustable to center the letter)
+ - Determine the best way to change colors either using relays or solid state circuits (it may need to involve 7 separate 3-direction analog multiplexers per column)
 
    
 ## Design Decisions
 
- • the board will be placed on a single PCB smaller than a sheet of standard letter paper
- • the device will be using a 16 VDC power supply going into the power connector on the board. The type of power supply and whether it will be USB-C based has yet to be determined.
- • 
+ - the board will be placed on a single PCB smaller than a sheet of standard letter paper
+ - the device will be using a 16 VDC power supply going into the power connector on the board. The type of power supply and whether it will be USB-C based has yet to be determined.
+ - the 3257ADC is the heart of the display readout
+ - A combination of decade counters, inverters, Bipolar-Junction Transistors, 3-t0-8 decoders will be used to control the display output
+ - Power Supply will likely be shielded or encased to avoid potential burns from the Voltage Regulators (potentially using the cage itself as a heatsink?)
+   
 ## Design Misc
 
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
-
+# 8-Bit D-type Flip Flop Demo Board
+ - Developed a preliminary demo PCB (using an octal D-type Flip Flop chip) to aide in improving circuit development knowledge, and ensure a sucessful and functional build
+ - Learned important methods to clock circuit design practices
+   
 ## Steps for Documenting Your Design Process
 
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+Additions completed as I go, every 8 weeks a new presentation will be uploaded demonstrating progress on the project overall (mainly for the AMP Lab team)
 
 ## BOM + Component Cost
 
 VINTAGE Fairchild 3257ADC Character Generator ROM - $16.37
 8X8 LED MATRIX - $10.86
-VINTAGE AMD AM9101BPC SRAM Modules 256 x 4 BITS, (two used in series, two in parallel, to increase to 512 X 8 BITS) 512K RAM - $23.97
-
+OnSemi (Motorola) 4 x 1024 Bit SRAM Memory, two in parallel making 1K of memory - $7.99 (per chip)
+Various 74-series logic chips, more will be added as design decisions are finalized - $9.99 (per chip)
+PCB Generation: Prototype (8-Bit D-Type Flip Flop Display Board, practice) - $11.15
+PCB Generation: Visual-portion Prototype - $9.99
+PCB Generation: Final Product
 
 ## Timeline
 
@@ -63,7 +74,10 @@ VINTAGE AMD AM9101BPC SRAM Modules 256 x 4 BITS, (two used in series, two in par
 
 ## Useful Links
 
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+ - https://en.wikipedia.org/wiki/ASCII
+ - https://en.wikipedia.org/wiki/7400-series_integrated_circuits
+ - https://en.wikipedia.org/wiki/Character_generator
+ - https://en.wikipedia.org/wiki/Transistor
 
 ## Log
 
